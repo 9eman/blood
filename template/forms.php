@@ -115,7 +115,7 @@ if(isset($_POST['new-feedback'])){
     $sql = "INSERT INTO feedbacks(phoneh, emailh, genderh, evaluateh, helph, viewh, commentsh) VALUES ('$phoneh', '$emailh', '$genderh', '$evaluateh', '$helph', '$viewh', '$commentsh')";
 
     if (mysqli_query($conn, $sql)) {
-        header("Location: /?p=thankyou");
+        header("Location: ?p=thankyou");
     } else {
         echo '<p class="text-white bg-danger">Sorry sometging went wrong, try again.</p>';
     }

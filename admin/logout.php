@@ -3,5 +3,5 @@
 session_destroy();
 
 //redirect user to home page
-header("Location: /")
+header("Location: ?p=home")
 ?>
